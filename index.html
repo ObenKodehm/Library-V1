@@ -1,14 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   <link rel="stylesheet" href="./styles/reset.css">
   <link rel="stylesheet" href="./styles/style.css">
   <title>Library</title>
 </head>
+
 <body>
-  
+
+  <!-- nav-bar -->
+  <nav>
+    <ul>
+      <li class="title">Library</li>
+    </ul>
+  </nav>
+
+  <!-- Main Book Library -->
+  <main class="grid-container" id="main-grid">
+    
+    <div class="header-row">
+      <div class="vertical-rule"></div>
+      <span class="header id">ID</span>
+      <div class="vertical-rule"></div>
+      <span class="header title">Title</span>
+      <div class="vertical-rule"></div>
+      <span class="header author">Author</span>
+      <div class="vertical-rule"></div>
+      <span class="header pages">Pages</span>
+      <div class="vertical-rule"></div>
+      <span class="header status">Status</span>
+      <div class="vertical-rule"></div>
+    </div>
+
+  </main>
+
+  <!-- Pop-Up -->
+  <div class="pop-up">
+
+    <div class="book-details">
+
+      <div class="detail book-title">
+        <label for="title">Title:</label>
+        <input type="text" id="title" placeholder="Enter Book Title">
+      </div>
+
+      <div class="detail book-author">
+        <label for="author">Author:</label>
+        <input type="text" id="author" placeholder="Enter Book Author">
+      </div>
+
+      <div class="detail book-pages">
+        <label for="pages">Pages:</label>
+        <input type="text" id="pages" placeholder="Enter Pages Completed">
+      </div>
+
+      <div class="detail book-status">
+        <input type="checkbox" id="status">
+        <label for="status">read</label>
+      </div>
+
+      <div class="save-back-buttons">
+        <button id="back">back</button>
+        <button id="save">save</button>
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- Add Icon -->
+  <div class="add-icon">
+    <i class="material-icons">add</i>
+  </div>
 </body>
 <script src="index.js"></script>
 </html>
