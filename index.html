@@ -27,59 +27,63 @@
   <main class="grid-container" id="main-grid">
     
     <div class="header-row">
+      <div class="grid-column">
+        <p>ID</p>
+      </div>
       <div class="vertical-rule"></div>
-      <span class="header id">ID</span>
+      <div class="grid-column">
+        <p>Title</p>
+      </div>
       <div class="vertical-rule"></div>
-      <span class="header title">Title</span>
+      <div class="grid-column">
+        <p>Author</p=>
+      </div>
       <div class="vertical-rule"></div>
-      <span class="header author">Author</span>
+      <div class="grid-column">
+        <p>Pages</pss=>
+      </div>
       <div class="vertical-rule"></div>
-      <span class="header pages">Pages</span>
-      <div class="vertical-rule"></div>
-      <span class="header status">Status</span>
-      <div class="vertical-rule"></div>
+      <div class="grid-column">
+        <p>Status</pclass=>
+      </div>
     </div>
 
   </main>
 
   <!-- Pop-Up -->
-  <div class="pop-up">
 
-    <div class="book-details">
+  <div class="book-details pop-up">
 
-      <div class="detail book-title">
-        <label for="title">Title:</label>
-        <input type="text" id="title" placeholder="Enter Book Title">
-      </div>
+    <form>
 
-      <div class="detail book-author">
-        <label for="author">Author:</label>
-        <input type="text" id="author" placeholder="Enter Book Author">
-      </div>
+      <label for="title">Title:</label>
+      <input type="text" id="title" name="Title" placeholder="Enter Book Title">
 
-      <div class="detail book-pages">
-        <label for="pages">Pages:</label>
-        <input type="text" id="pages" placeholder="Enter Pages Completed">
-      </div>
+      <label for="author">Author:</label>
+      <input type="text" id="author" placeholder="Enter Book Author">
 
-      <div class="detail book-status">
-        <input type="checkbox" id="status">
-        <label for="status">read</label>
+      <label for="pages">Pages:</label>
+      <input type="number" id="pages" placeholder="Enter Pages Completed">
+
+      <div class="book-status">
+        <select name="status" id="status">
+          <option value="read">read</option>
+          <option value="not read">not read</option>
+        </select>
       </div>
 
       <div class="save-back-buttons">
-        <button id="back">back</button>
-        <button id="save">save</button>
+        <input type="button" id="back" value="back">
+        <input type="submit" id="save" value="save">
       </div>
 
-    </div>
+    </form>
 
   </div>
+
 
   <!-- Add Icon -->
-  <div class="add-icon">
-    <i class="material-icons">add</i>
-  </div>
+    <span class="material-icons add-icon" id="add-button">add</span>
 </body>
 <script src="index.js"></script>
 </html>
